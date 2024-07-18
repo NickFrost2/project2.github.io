@@ -302,8 +302,8 @@ a {
    text-decoration: none;
 }
 
-/* Media Queries */
-@media(max-width: 768px)/*{
+Media Queries
+@media(max-width: 768px){
   header #branding,
   header nav,
   header nav li,
@@ -315,7 +315,7 @@ a {
     float:none;
     text-align:center;
     width:100%;
-  }*/
+
    {.port h1, nav, .email h1, .email form, .email button, #boxes .box, #e h1, #e form {
       float: none;
       text-align: center;
