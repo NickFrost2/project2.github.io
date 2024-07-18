@@ -1,0 +1,342 @@
+body {
+    background-color: whitesmoke;
+    padding: 0%;
+    margin: 0%;
+    font: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+   width: 80%;
+   margin: auto;
+   overflow: hidden;
+}
+
+/* header*/
+header {
+    background-color: black;
+    border-bottom: 5px solid #ff7800;
+    width: 100%;
+    min-height: 70px;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 30px;
+    margin: 0;
+}
+
+header div.port {
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+ header div h1 {
+    color: #ff7800;
+    margin: 0px;
+ }
+ header li {
+    list-style: none;
+    display: inline;
+    padding: 0 20px 0 20px;
+    float: left;
+ }
+ header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+ }
+
+ /* Hero section*/
+ #hero{
+    background: url('hero.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #ff7800;
+    min-height: 500px;
+    overflow: hidden;
+ }
+ #hero h1 {
+    font-size: 55px;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ff7800;
+    margin-top: 150px;
+ }
+ #hero p {
+    font-size: 20px;
+    text-transform: capitalize;
+    text-decoration: overline underline black;
+    text-shadow: 1px 1px 1px black;
+ }
+
+ /*email*/
+ .email {
+     background: #ff7800;
+     padding: 8px;
+
+ }
+ .email h1 {
+    float: left;
+    text-transform: capitalize;
+    font-size: 30px;
+ }
+ .email form {
+    float: right;
+    margin-top: 20px;
+    
+ }
+ .email input {
+     padding: 8px;
+     height: 25px;
+     width: 250px;
+     height: 20px;
+     border-radius: 2px;
+     border: 2px solid white;
+ }
+
+ /*boxes*/
+ #boxes {
+   margin-top: 20px;
+   padding-left: 20px;
+   align-content: center;
+ }
+ #boxes .box {
+   float: left;
+   text-align: center;
+   width: 30%;
+   padding: 10px;
+ }
+ #boxes .box img{
+   width: 90%;
+ }
+ #boxes h1{
+   text-transform: uppercase;
+   font-weight: bold;
+   padding: -30px;
+ }
+ #boxes p{
+   padding: 0;
+   font-size: larger;
+ }
+ #boxes a{
+   color: #ff7800;
+   text-decoration: none;
+ }
+
+  /*footer*/
+  footer{
+   padding: 20px;
+   margin-top: 20px;
+   background-color: rgb(15, 15, 15);
+   color: #ff7800;
+   }
+  
+      #foot h1 {
+         float: left;
+         text-transform: capitalize;
+         font-size: 30px;
+      }
+   
+      #foot form {
+         float: right;
+         margin-top: 15px;
+      }
+   
+      #foot input[type="text"] {
+         padding: 4px;
+         height: 25px;
+         width: 250px;
+      }
+
+      div.top {
+         margin-top: 15px;
+      }
+      footer p {
+         text-align: center;
+         color: white;
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      #e {
+         background-color:  rgb(15, 15, 15);
+      }
+
+/* Webdesign Section*/
+/*hero section*/
+#webdesign {
+   background: url('webdesign.png') no-repeat;
+   min-height: 700px;
+   overflow: hidden;
+   background-position: center;
+   background-size: cover;
+}
+
+/*info section*/
+div#rightinfo {
+   width: 60%;
+   float: left;
+
+}
+aside#aside {
+   width: 30%;
+   float: right;
+   margin-top: 20px;
+}
+div#round {
+   border-radius: 20px 50px 20px 0px;
+}
+.pinfo {
+   color: white;
+   background-color:  rgb(15, 15, 15);
+   padding: 15px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+div.textcontain {
+   background-color: #ff7800;
+   color: white;
+   height: 50px;
+   padding: 10px;
+   margin-top: 20px;
+   text-align: center;
+   text-overflow: hidden;
+}
+/*movinf text animation
+@keyframes movetext{
+   0% {transform: translateX(-50%); opacity: 0;}
+   50% {transform: translateX(0%); opacity: 1;}
+   100% {transform: translateX(50%); opacity: 0;}
+}
+.movingtext {
+   animation-name: movetext;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}*/
+
+
+@keyframes blink {
+   0% {opacity: 1;}
+   50% {opacity: 0.5; color: black;}
+   100% {opacity: 1;}
+}
+.movingtext {
+   animation-name: blink;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+}
+
+/*graphic design section*/
+#graphicdesign {
+   background: url('graphic.png') no-repeat;
+   min-height: 800px;
+   overflow: hidden;
+   background-position: center;
+   background-size: cover;
+}
+
+/*Programming section*/
+#programming {
+   background: url('programming.png') no-repeat;
+   min-height: 800px;
+   overflow: hidden;
+   background-position: center;
+   background-size: cover;
+}
+p.pup, p.pdown {
+   background-color: rgb(247, 239, 230);
+   color: black;
+   padding: 20px;
+   border: 1px solid rgb(197, 189, 189);
+}
+
+/*overall styling*/
+a.place:visited {
+   font-weight: bolder;
+   color: #ff7800;
+   font-size: larger;
+}
+nav ul li a:hover, section div p a:hover {
+   font-size: larger;
+}
+
+button {
+   height: 30px;
+   width: 100px;
+   padding: 2px;
+   height: 40px;
+   background-color: #ff7800;
+   text-align: center;
+   border: none;
+   color: white;
+   text-transform: capitalize;
+   font-size: medium;
+}
+button:hover {
+   cursor: pointer;
+   border: 1px white solid;
+   border-radius: 2px;
+}
+button.other {
+   background-color:  rgb(15, 15, 15);
+}
+button.uparrow {
+   width: 40px ;
+   height: 40px;
+   font-size: larger;
+   font-weight: bolder;
+   font-style: oblique;
+   border-radius: 20px;
+}
+button#uparrow2 {
+   float: right;
+}
+button.uparrow:hover {
+   width: 42px;
+   height: 42px;
+}
+a {
+   color: white;
+   text-decoration: none;
+}
+
+/* Media Queries */
+@media(max-width: 768px)/*{
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }*/
+   {.port h1, nav, .email h1, .email form, .email button, #boxes .box, #e h1, #e form {
+      float: none;
+      text-align: center;
+      width: 100%;
+   }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #newsletter button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
